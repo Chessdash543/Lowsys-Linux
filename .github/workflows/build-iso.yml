@@ -1,0 +1,33 @@
+name: Build ISO
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    container:
+      image: archlinux:latest
+
+    steps:
+      - name: Instalar dependências
+        run: |
+          pacman -Sy --noconfirm archiso git
+
+      - name: Baixar projeto
+        uses: actions/checkout@v4
+
+      - name: Construir ISO
+        run: |
+          mkdir -p out work
+          mkarchiso -v -w work -o out .
+
+      - name: Enviar ISO
+        uses: actions/upload-artifact@v4
+        with:
+          name: Spectrum-ISO
+          path: out/*.iso
