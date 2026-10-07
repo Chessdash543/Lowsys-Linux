@@ -46,5 +46,8 @@ eza
 zoxide
 
 xdg-user-dirs
-xdg-utils
-ly
+xdg-util
+xorg-xrandr
+xorg-xinput
+xorg-xset
+xorg-xsetroot
