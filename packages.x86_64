@@ -11,14 +11,13 @@ xorg-xset
 xorg-xsetroot
 
 openbox
-tint2
-rofi
+dmenu
 dunst
 
 pcmanfm
 feh
 
-xterm
+alacritty
 
 networkmanager
 network-manager-applet
@@ -45,5 +44,4 @@ zoxide
 
 xdg-user-dirs
 xdg-utils
-
-firefox
+ly
