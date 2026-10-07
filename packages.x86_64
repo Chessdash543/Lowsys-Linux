@@ -10,7 +10,9 @@ xorg-xrandr
 xorg-xinput
 xorg-xset
 xorg-xsetroot
-
+mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-nfs-utils
 openbox
 dmenu
 dunst
