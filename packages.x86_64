@@ -2,7 +2,8 @@ base
 linux
 linux-firmware
 intel-ucode
-
+amd-ucode
+syslinux
 xorg-server
 xorg-xinit
 xorg-xrandr
