@@ -50,3 +50,5 @@ xorg-xrandr
 xorg-xinput
 xorg-xset
 xorg-xsetroot
+bash
+zsh
